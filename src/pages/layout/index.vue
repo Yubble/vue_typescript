@@ -8,7 +8,8 @@
         <DefAside/>
       </aside>
       <section class="payBoss-contain">
-        <el-scrollbar style="height: 100%">
+        <!-- 此处加上标签 -->
+        <el-scrollbar style="height: 100%" class="payBoss-contain-content">
           <keep-alive>
             <router-view />
           </keep-alive>
@@ -71,6 +72,11 @@ export default class Layout extends Vue {}
         height: calc(100% - 70px);
         box-sizing: border-box;
         overflow: hidden;
+        background: #f6f6f6;
+
+        .payBoss-contain-content {
+          padding: 8px 10px;
+        }
       }
     }
   }
