@@ -9,7 +9,8 @@ export interface Route {
   path: string
   name?: string
   component: any
-  meta: Meta
+  redirect?: string
+  meta?: Meta
   children?: ChildRoute[]
 }
 
@@ -17,7 +18,7 @@ interface ChildRoute {
   path: string
   name: string
   component: any
-  meta: Meta
+  meta?: Meta
   props?: (route: any) => any
 }
 

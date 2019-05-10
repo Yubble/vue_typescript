@@ -1,24 +1,18 @@
+// 基本类型页面的路由
+
 // import Layout from '@/page/index/'
 import { Route } from '../types/standard'
-import Home from '../../views/Home.vue'
-import About from '../../views/About.vue'
+import unfound from '../../views/404.vue'
+// import Home from '../../views/Home.vue'
+// import About from '../../views/About.vue'
 
 const basicRouter: Route[] = [
   {
-    path: '/',
-    name: 'home',
-    component: Home,
+    path: '/404',
+    name: 'unfound',
+    component: unfound,
     meta: {
-      title: '首页',
-      permission: true
-    }
-  },
-  {
-    path: '/about',
-    name: 'about',
-    component: About,
-    meta: {
-      title: '关于',
+      title: '错误页面',
       permission: true
     }
   }
