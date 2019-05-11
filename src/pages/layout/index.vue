@@ -22,7 +22,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import DefTop from './components/DefTop.vue'
-import DefAside from './components/DefAside.vue'
+import DefAside from './components/sideBar/DefAside.vue'
 
 @Component({
   components: {

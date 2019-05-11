@@ -4,6 +4,7 @@ import { Route } from '../types/standard'
 import Layout from '../../pages/layout/index.vue'
 import Home from '../../views/Home.vue'
 import About from '../../views/About.vue'
+import More from '../../views/More.vue'
 
 const basicRouter: Route[] = [
   {
@@ -21,12 +22,27 @@ const basicRouter: Route[] = [
   },
   {
     path: '/about',
-    name: 'about',
     component: Layout,
-    meta: {
-      title: '关于',
-      permission: true
-    }
+    children: [
+      {
+        path: '/',
+        name: '关于',
+        component: About,
+        meta: { title: '关于' }
+      }
+    ]
+  },
+  {
+    path: '/more',
+    component: Layout,
+    children: [
+      {
+        path: '/',
+        name: '更多',
+        component: More,
+        meta: { title: '更多' }
+      }
+    ]
   }
 ]
 
