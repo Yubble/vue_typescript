@@ -1,15 +1,13 @@
 <template>
   <div class="payBoss-tags">
-    <el-tabs v-model="editableTabsValue" type="card" editable @edit="handleTabsEdit">
-      <el-tab-pane
-        :key="item.name"
-        v-for="(item, index) in editableTabs"
-        :label="item.title"
-        :name="item.name"
-      >
-        {{item.content}}
-      </el-tab-pane>
-    </el-tabs>
+    <el-tag
+      v-for="tag in tags"
+      :key = "tag.name"
+      closabe
+      :type = "tag.type"
+    >
+      {{tag.name}}
+    </el-tag>
   </div>
 </template>
 
@@ -18,6 +16,11 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Tags extends Vue{
+  private tags:any[] = [
+    {name: '标签一', type: ''},
+    {name: '标签二', type: 'success'},
+    {name: '标签三', type: 'info'}
+  ]
 }
 </script>
 

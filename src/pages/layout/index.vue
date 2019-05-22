@@ -9,7 +9,7 @@
       </aside>
       <section class="payBoss-contain">
         <!-- 页面标签 -->
-        <tags/>
+        <Tags/>
         <!-- 此处加上标签 -->
         <el-scrollbar style="height: 100%" class="payBoss-contain-content">
           <keep-alive>
@@ -23,14 +23,15 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import tags from './components/tags.vue';
+import Tags from './components/Tags.vue';
 import DefTop from './components/DefTop.vue';
 import DefAside from './components/sideBar/DefAside.vue';
 
 @Component({
   components: {
     DefTop,
-    DefAside
+    DefAside,
+    Tags
   },
 })
 export default class Layout extends Vue {}

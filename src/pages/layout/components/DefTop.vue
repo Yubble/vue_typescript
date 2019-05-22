@@ -15,5 +15,6 @@ export default class DefTop extends Vue {
 <style lang="less" scoped>
   .payBoss-top {
     padding: 0 20px;
+    margin-left: 10px;
   }
 </style>
