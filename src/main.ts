@@ -1,9 +1,11 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-import store from './store';
+import store from './store/index';
 // 引入全局样式
 import './styles/common.less'
+// 引入守卫
+import './guard'
 // 引入ElementUI
 import * as ELementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'

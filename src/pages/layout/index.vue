@@ -79,7 +79,8 @@ export default class Layout extends Vue {}
         background: #f6f6f6;
 
         .payBoss-contain-content {
-          padding: 8px 10px;
+          margin: 8px 20px;
+          background: #ffffff;
         }
       }
     }
