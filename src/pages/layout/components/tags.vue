@@ -37,6 +37,10 @@ export default class Tags extends Vue{
   private handleTabsEdit() {
     console.log('触发了操作')
   }
+
+  mounted() {
+    console.log()
+  }
 }
 </script>
 
