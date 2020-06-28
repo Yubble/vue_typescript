@@ -1,10 +1,7 @@
 // 基本类型页面的路由
 
-// import Layout from '@/page/index/'
 import { Route } from '../types/standard'
-import unfound from '../../views/404.vue'
-// import Home from '../../views/Home.vue'
-// import About from '../../views/About.vue'
+import unfound from 'views/404.vue'
 
 const basicRouter: Route[] = [
   {

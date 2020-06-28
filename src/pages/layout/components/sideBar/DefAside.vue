@@ -18,13 +18,10 @@
         <el-menu-item index="1-2">
           <router-link to="/about">关于</router-link>
         </el-menu-item>
+        <el-menu-item index="1-3">
+          <router-link to="/more">更多</router-link>
+        </el-menu-item>
       </el-submenu>
-      <el-menu-item index="2">
-        <i class="el-icon-menu"></i>
-        <span slot="title">
-          <router-link to="/more">导航二</router-link>
-        </span>
-      </el-menu-item>
     </el-menu>
   </div>
 </template>

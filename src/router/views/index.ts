@@ -1,9 +1,9 @@
 // 业务类型页面的路由
 
 import { Route } from '../types/standard'
-import Home from '../../views/Home.vue'
-import About from '../../views/About.vue'
-import More from '../../views/More.vue'
+import Home from 'views/Home.vue'
+import About from 'views/About.vue'
+import More from 'views/More.vue'
 
 const basicRouter: Route[] = [
   {

@@ -1,3 +1,8 @@
+const path = require('path')
+function resolve(dir) {
+  return path.join(__dirname, dir)
+}
+
 // vue.config.js
 module.exports = {
   // 选项...
@@ -26,6 +31,12 @@ module.exports = {
   crossorigin:undefined,
   // 在生成的 HTML 中的  和  标签上启用 Subresource Integrity (SRI)。如果你构建后的文件是部署在 CDN 上的，启用该选项可以提供额外的安全性。需要注意的是该选项仅影响由 html-webpack-plugin 在构建时注入的标签 - 直接写在模版 (public/index.html) 中的标签不受影响。另外，当启用 SRI 时，preload resource hints 会被禁用，因为 Chrome 的一个 bug 会导致文件被下载两次。
   integrity:false,
+  // 设置别名
+  chainWebpack(config) {
+    config.resolve.alias
+      .set('@', resolve('src'))
+      .set('views', resolve('src/views'))
+  },
   // 反向代理
   devServer:{
       // devServer: {
